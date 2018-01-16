@@ -3,8 +3,7 @@ require './app/services/amazon_service.rb'
 class ApplicationController < Sinatra::Base
 
   use Rack::Auth::Basic, "Restricted Area" do |username, password|
-    config = YAML.load(File.read('config/application.yml'))
-    username == config["username"]  and password == config["password"]
+    username == ENV["username"]  and password == ENV["password"]
   end
 
   get '/' do
