@@ -1,0 +1,27 @@
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+.seraphin {
+  width: 300px;
+}
+
+.wrapper {
+  margin-top: 15vh;
+}
+
+@font-face {
+  font-family: "hipster";
+  src: url(public/fonts/airbag.ttf), format('truetype');
+       // url(assets/fonts/airbag.otf), format('truetype');
+}
+
+.message {
+  font-family: "hipster";
+}
+
+
