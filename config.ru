@@ -1,5 +1,7 @@
 require 'sinatra'
-require 'dotenv/load'
+
+require 'dotenv'
+Dotenv.load('config/application.env')
 
 require './app/application_controller.rb'
 
